@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artists' Corner</title>
+    <link rel = "icon" href = "Assets/logoOriginal.png">
     <link href = "artistscorner.css" rel = "stylesheet" type = "text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
 
     <script type = "text/javascript">
       function submitToHome(){
@@ -38,117 +39,49 @@
     </script> 
 </head>
 <body>
-    <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg justify-content-center">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" onclick="submitToHome()">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" onclick="submitToInfo()">InfoTip Collection</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" onclick="submitToArtist()">Artist's Corner</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" onclick="submitToAbout()">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" onclick="submitToContact()">Contact Us</a>
-        </li>
-      </ul>
-      </nav>
-    <div class="big-shop" id="shop">
-        <div class="shop-title">
-            <h2>
-               Artists' Corner
-            </h2>
+  <section class = "home">
+    <header>
+        <div class = "logo">
+            <img src = "Assets/logoText.png">
         </div>
-        <div class="shop-flex">
-            <div class="shop-one">
 
-                <div class="image-one">
-                    <img src="Assets/julian-hochgesang-Dkn8-zPIbwo-unsplash.jpg" alt="">
-                    <div class="overlay">
-                        <div class="txt">
-                            <h3>Lorem Ipsum</h3>
-                            <section>
-                                <span>Lorem</span> / Ipsum
-                            </section>
-                        </div>
-                    </div>
-                </div>
+        <ul class = "navbar">
+            <li><a onclick = "submitToHome()">Home</a></li>
+            <li><a onclick = "submitToInfo()">InfoTip Collection</a></li>
+            <li><a onclick = "submitToArtist()">Artists' Corner</a></li>
+            <li><a onclick = "submitToAbout()">About Us</a></li>
+            <li><a onclick = "submitToContact()">Contact Us</a></li>
+        </ul>
+    </header>
 
-                <div class="image-one">
-                    <img src="images/4.jpg" alt="">
-                    <div class="overlay">
-                        <div class="txt">
-                            <h3>Lorem Ipsum</h3>
-                            <section>
-                                <span>Lorem</span> / Ipsum
-                            </section>
-                            <div class="link">
-                                <a href="#">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="shop-one">
-
-                <div class="image-one">
-                    <img src="Assets/download.jpg" alt="">
-                    <div class="overlay">
-                        <div class="txt">
-                            <h3>Lorem Ipsum</h3>
-                            <section>
-                                <span>Lorem</span> / Ipsum
-                            </section>
-                            <div class="link">
-                                <a href="#">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="image-one">
-                    <img src="Assets/ph.jpg" alt="">
-                    <div class="overlay">
-                        <div class="txt">
-                            <h3>White lamp</h3>
-                            <section>
-                                <span>Lorem</span> / Ipsum
-                            </section>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="shop-two">
-                <img src="Assets/furn6.jpg" alt="">
-                <div class="overlay">
-                    <div class="txt">
-                        <h3>Lorem Ipsum</h3>
-                        <section>
-                            <span>Lorem</span> / Ipsum
-                        </section>
-                        <div class="link">
-                            <a href="#">View <i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- start scroll to top  -->
-    <div class="top">
-        <i class="fas fa-chevron-up"></i>
-    </div>
-    <!-- end scroll to top  -->
+    <div id="container">
+      <div class="card-container">
+          <!--Card 1-->
+          <div class="card">
+              <div class="card-image card-1"></div>
+          </div>
+          <!--Card 2-->
+          <div class="card">
+              <div class="card-image card-2"></div>
+          </div>
+          <!--Card 3-->
+          <div class="card">
+              <div class="card-image card-3"></div>
+          </div>
+          <!--Card 4-->
+          <div class="card">
+              <div class="card-image card-4"></div>
+          </div>
+          <!--Card 5-->
+          <div class="card">
+              <div class="card-image card-5"></div>
+          </div>
+          <!--Card 6-->
+          <div class="card">
+              <div class="card-image card-6"></div>
+          </div>
+      </div>
+  </div>
+  </section>
 </body>
 </html>
