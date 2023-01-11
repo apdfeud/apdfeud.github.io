@@ -1,107 +1,296 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=IBM+Plex+Mono:wght@100&family=Inter:wght@200;300&family=Silkscreen&display=swap');
-* {
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rajdhani:wght@300;400&family=Roboto:wght@100;300;400;500;700;900&display=swap');* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/*MAIN*/
-.main {
-    height: 100vh;
-    background-image: url("Assets/mainBg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/*NAVBAR*/
-.navbar {
-    height: 15vh;
-    background-color: rgba(116, 116, 116, 0.1) !important;
-}
-
-.nav-link {
-    color: #ffffff !important;
-    font-family: Abel;
-    font-size: 1.5em !important;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .5s;
-}
-
-.nav-link:hover {
-    color: #f0b201 !important;
-}
-
-.main .top {
-    display: flex;
-    justify-content: center;
     align-items: center;
-}
-.main #welcome {
-    position: absolute;
-    transform: translateY(-42vh);
-    color: #f0b201;
-    font-size: 4vh;
-    font-family: Silkscreen;
-    font-weight: 300;
-}
-.main #logoText {
-    position: absolute;
-    height: 25%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    transition: .5s;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
 }
 
-.main #logoText:hover {
-    filter: drop-shadow(5px 5px 15px #f0b201);
+:root {
+    --primary: #151515;
+    --secondary: #ffffff;
+    --tertiary: #f0b201;
+    --main: 'Roboto', sans-serif;
+    --style: 'Rajdhani', sans-serif;
 }
 
-.main #tagline {
-    position: absolute;
-    transform: translateY(-15vh);
-    color: #fdd565;
-    font-size: 2.5vh;
-    font-family: Abel;
-    font-weight: 300;
-}
-/*MAIN*/
 
-/*SECTIONS*/
-.sect {
-    padding: 100px 0 550px 0;
-    height: 100%;
-    background-image: linear-gradient( rgba(3, 14, 28, 0.8), rgba(16, 36, 59, 0.5)),url("Assets/sectBg.png");
-    background-repeat: no-repeat;
+body {
+    background: var(--primary);
+}
+
+/*HOME*/
+.home {
+    height: 80vh;
+    background-image:  linear-gradient(rgba(21,21,21,.85) 55%, rgba(21,21,21,.3)), url(/Assets/alex-wong-l5Tzv1alcps-unsplash.jpg);
     background-position: center;
     background-size: cover;
-    border-top: 5px solid rgb(23, 34, 62);
+    text-align: center;
 }
-/*
-.sect img {
-    height: 500px;
-    width: 600px;
-    transition: ease-in-out .2s;
+
+header {
+    padding: 20px 3%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li a {
+    color: var(--secondary);
+    font-family: var(--main);
+    font-size: 1.1em;
+    font-weight: 300;
+    padding: 5px 15px;
     cursor: pointer;
-    margin: 0 -35px 0 -35px;
 }
 
-.sect img:hover {
-    scale: 1.05;
-    filter: drop-shadow(5px 5px 25px #f0b201);
+.navbar li a:hover {
+    background: var(--tertiary);
+    transition: all .3s ease;
 }
-.sectone {
-    justify-content: center;
+
+.home h1 {
+    color: var(--secondary);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4em;
+    font-weight: 700;
+    margin-top: 10%;
+}
+
+.home p {
+    color: var(--secondary);
+    font-family: var(--style);
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.home button {
+    margin-top: 2em;
+    padding: 10px 25px;
+    background: var(--tertiary);
+    border: none;
+    color: var(--secondary);
+    font-family: var(--main);
+    font-size: 1.3em;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.home button:hover {
+    background: transparent;
+    outline: 3px solid var(--tertiary);
+}
+
+/*SPECIALTY*/
+.specialty {
+    height: 15vh;
+}
+
+.btncontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    column-gap: 3px;
+    height: 100%;
+}
+
+.btncontainer .btn {
+    height: 100%;
+    background: var(--tertiary);
+    color: var(--secondary);
+    text-align: center;
+}
+
+.btn h1 {
+    font-family: var(--main);
+    font-size: 1.8em;
+    margin-top: 1.4em;
+}
+
+.btn p {
+    font-family: var(--style);
+    font-size: 1.2em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.one:hover {
+    background-image: linear-gradient(rgba(21,21,21,.6), rgba(21,21,21,.8)), url(./Assets/christin-hume-mfB1B1s4sMc-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.two:hover {
+    background-image: linear-gradient(rgba(21,21,21,.6), rgba(21,21,21,.8)), url(./Assets/dusan-jovic-5DLRReNddWw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.three:hover {
+    background-image: linear-gradient(rgba(21,21,21,.6), rgba(21,21,21,.8)), url(./Assets/brett-jordan-MHS7g_q-6mE-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+/*Highlights*/
+.highlights {
+    margin-top: 2em;
+    height: 70vh;
+}
+
+.highlights .title {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.highlights .title h1 {
+    color: var(--secondary);
+    font-size: 2em;
+    font-family: var(--main);
+}
+
+.carousel {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none; 
+}
+
+
+.slide-container { 
+    display: block; 
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
     width: 100%;
-}
-.secttwo {
-    justify-content: center;
-    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
 }
 
-.secttwo img {
-    margin-top: -80vh;
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
 }
 
-SECTIONS*/
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
 
+.slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+     display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+	opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
