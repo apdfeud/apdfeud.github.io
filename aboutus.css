@@ -1,31 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=IBM+Plex+Mono:wght@100&family=Inter:wght@200;300&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rajdhani:wght@300;400&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
 }
 
-body {
-    background-color: rgb(68, 68, 68) !important;
+:root {
+  --primary: #151515;
+  --secondary: #ffffff;
+  --tertiary: #f0b201;
+  --main: 'Roboto', sans-serif;
+  --style: 'Rajdhani', sans-serif;
+}
+
+.home {
+  background: var(--primary);
+  height: 200vh;
 }
 
 /*NAVBAR*/
+header {
+  padding: 20px 3%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.logo img {
+  height: 80px;
+}
+
 .navbar {
-    height: 15vh;
-    background-color: rgba(116, 116, 116, 0.1) !important;
+  display: flex;
 }
 
-.nav-link {
-    color: #ffffff !important;
-    font-family: Abel;
-    font-size: 1.5em !important;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .5s;
+.navbar li a {
+  color: var(--secondary);
+  font-family: var(--main);
+  font-size: 1.1em;
+  font-weight: 300;
+  padding: 5px 15px;
+  cursor: pointer;
 }
 
-.nav-link:hover {
-    color: #f0b201 !important;
+.navbar li a:hover {
+  background: var(--tertiary);
+  transition: all .3s ease;
 }
 
 .honeycomb {
@@ -72,6 +97,7 @@ body {
     text-transform: uppercase;
     color: #fff;
     font-weight: 700;
+    font-family: var(--style);
     font-size: 1.75em;
     transition: opacity 350ms;
   }
